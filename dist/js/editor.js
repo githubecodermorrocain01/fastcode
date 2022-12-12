@@ -78,16 +78,3 @@ centered.addEventListener("click",()=>{
 window.addEventListener("mousemove", (e)=>{
 centered.style.display === "none" & e.clientX >= document.body.clientWidth/2 ? centerElemnet() : centered.classList.remove("showhide")  
 })
-
-//   const controls = document.createElement("div")
-// centered.setAttribute("class","controls")
-//   controls.style.position="absolute";
-//   controls.style.left=0;
-//   controls.style.top=0;
-//   controls.style.width="100px"
-//   controls.style.height="100px"
-//   controls.style.background="red";
-//   controls.style.zIndex="100";
-//   document.body.onmousemove =()=>{
-//   document.body.append(controls);
-//   }
