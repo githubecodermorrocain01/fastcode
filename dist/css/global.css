@@ -10,10 +10,12 @@ padding: 2px !important;
 }
 body{
 overflow: hidden;
+padding: 10px;
 }
 #preview{
 font-weight: lighter !important;
 font-size: 10px !important;
+margin: 0px 10px 0px 0px;
 }
 .d-none{
 display: none !important;
