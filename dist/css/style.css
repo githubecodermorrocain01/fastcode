@@ -1,0 +1,34 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+overflow: hidden;}
+.languages  {
+width: 100%;
+position: relative;
+}
+.html,.css,.javascript{
+width: 50%;
+height: 100%;
+overflow: scroll;
+border: 1px solid;
+}
+
+.languages iframe{
+width: 50%;
+height: 80%;
+position: absolute;    
+resize: both;
+}
+
+::-webkit-scrollbar{
+width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: black;
+border-radius: 10px;
+}
+

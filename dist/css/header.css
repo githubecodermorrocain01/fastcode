@@ -1,0 +1,17 @@
+.header{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.Name {
+    cursor: pointer;
+}
+.brand{
+position: relative;
+height: 100%;
+}
+
+
+
+

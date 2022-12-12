@@ -1,0 +1,120 @@
+ * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+        background-image: url('/dist/brand/fastcode.svg');
+        background-size: cover;
+        }
+
+        .container {
+            margin: 0 !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 97%;
+        }
+
+        article {
+            margin: 0;
+            padding: 0;
+            overflow: scroll;
+        }
+
+        iframe,
+        article,
+        .CodeMirror {
+            border: 0;
+            min-height: 100%;   
+        }
+
+        iframe {
+            background-color: white;
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: darkgoldenrod;
+        }
+
+        /* .cm-trailingspace {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAYAAAB/qH1jAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QUXCToH00Y1UgAAACFJREFUCNdjPMDBUc/AwNDAAAFMTAwMDA0OP34wQgX/AQBYgwYEx4f9lQAAAABJRU5ErkJggg==);
+      background-position: bottom left;
+      background-repeat: repeat-x;
+    }
+    /*______ */
+        .cm-header {
+            font-family: arial;
+        }
+
+        .cm-header-1 {
+            font-size: 150%;
+        }
+
+        .cm-header-2 {
+            font-size: 130%;
+        }
+
+        .cm-header-3 {
+            font-size: 120%;
+        }
+
+        .cm-header-4 {
+            font-size: 110%;
+        }
+
+        .cm-header-5 {
+            font-size: 100%;
+        }
+
+        .cm-header-6 {
+            font-size: 90%;
+        }
+
+        .cm-strong {
+            font-size: 140%;
+        }
+        .tools{
+        display: flex;
+        flex-direction: column; 
+        width: 20px !important;
+        height: 100px;
+        position: absolute;
+        }      
+        .tools i{
+        cursor: pointer !important;
+        }
+        .showhide{
+        display: block !important;
+        cursor: pointer;
+        }   
+
+
+    /*______*/
+
+    .CssExternalFile{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;    
+    animation: 2s  alternate infinite animation;
+    cursor: pointer;
+    }
+
+    @keyframes animation {
+    0%,100%{right: 0%;
+    }
+    50%{
+        right: 0;
+    margin-bottom: 5px;
+    }        
+    }
+    .CssExternalFile:hover{
+    animation: none !important;
+    right: 0;
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-weight: lighter !important;
+}
+body,html{
+height: 100%;
+padding: 2px !important;
+}
+body{
+overflow: hidden;
+}
+#preview{
+font-weight: lighter !important;
+font-size: 10px !important;
+}
+.d-none{
+display: none !important;
+}
+.code{
+font-size: 0.95em;
+}

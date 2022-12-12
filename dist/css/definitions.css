@@ -1,0 +1,10 @@
+.html-element{
+font-size: 15px !important;
+font-weight: lighter !important;
+padding: 10px;
+border-left: 10px solid #fd4774 !important;
+}
+.html-element span{
+color: #fd4774;
+font-weight: bold !important;
+}
