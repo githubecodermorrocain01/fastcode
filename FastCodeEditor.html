@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>html tag || FastCode </title>
+  <title>FastEditorCode || FastCode </title>
   <link rel="stylesheet" href="dist/bootstrap-icons/bootstrap-icons.css">
   <link rel="stylesheet" href="dist/css/global.css">
   <link rel=stylesheet href="dist/doc/docs.css">
   <link rel="stylesheet" href="dist/lib/codemirror.css">
-  <link rel="stylesheet" href="dist/theme/cobalt.css">
+  <link rel="stylesheet" href="dist/theme/ayu-mirage.css">
+  <!-- hint -->
   <link rel="stylesheet" href="dist/addon/hint/show-hint.css">
   <script src="dist/lib/codemirror.js"></script>
   <script src="dist/addon/hint/show-hint.js"></script>
@@ -48,12 +49,14 @@
   <link rel="stylesheet" href="dist/css/editorStyle.css">
   <link rel="stylesheet" href="dist/css/definitions.css">
   <script src="dist/js/jquery-3.6.0.min.js"></script>
+
 </head>
+
 <body>
-<div id="message">zedez</div>
   <section class="container">
     <article class="code">
     </article>
+    
     <iframe id="preview"></iframe>
   </section>
   <script>
@@ -63,8 +66,8 @@
       lineNumbers: true,
       autoCloseTags: true,
       extraKeys: { "Ctrl-Space": "autocomplete" },
-      value: documents.firstDocument,
-      theme: "cobalt",
+      value: documents.tryit,
+      theme: "ayu-mirage",
       showTrailingSpace: true,
       matchTags: { bothTags: true },
       extraKeys: { "Ctrl-J": "toMatchingTag" },
@@ -114,9 +117,7 @@
     document.querySelector("article").style.width = window.innerWidth / 2 + "px"
     document.querySelector("article").style.height = window.innerHeight + "px"
   </script>
- 
-<script src="dist/js/editor.js"></script>
-
+  <script src="dist/js/editor.js"></script>
 </body>
 
 </html>

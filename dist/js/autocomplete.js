@@ -47,7 +47,6 @@ const tag = [
 "kbd",
 "mark",
 "q",
-"rq",
 "rt",
 "ruby",
 "s",
@@ -102,7 +101,6 @@ const tag = [
 "textarea",
 "details",
 "dialog",
-"sammury",
 "form",
 "input",
 "label",
@@ -130,7 +128,6 @@ const tag = [
 "keygen",
 "marquee",
 "menuitem",
-"nobr",
 "noembed",
 "noframes",
 "param",
@@ -150,7 +147,7 @@ function autocomplete(inp, arr) {
   the text field element and an array of possible autocompleted values:*/
   let currentFocus;
   /*execute a function when someone writes in the text field:*/
-  inp.addEventListener("input", function(e) {
+  inp.addEventListener("input", function() {
       let a, b, i, val = this.value;
       /*close any already open lists of autocompleted values*/
       closeAllLists();
@@ -174,9 +171,10 @@ function autocomplete(inp, arr) {
           /*insert a input field that will hold the current array item's value:*/
           b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
           /*execute a function when someone clicks on the item value (DIV element):*/
-          b.addEventListener("click", function(e) {
+          b.addEventListener("click", function() {
               /*insert the value for the autocomplete text field:*/
               inp.value = this.getElementsByTagName("input")[0].value;
+              console.log(inp.value)
               /*close the list of autocompleted values,
               (or any other open lists of autocompleted values:*/
               closeAllLists();
@@ -244,3 +242,12 @@ function autocomplete(inp, arr) {
 autocomplete(document.getElementById("myInput"), tag);
 
 /*An array containing all the country names in the world:*/
+
+window.oninput = ()=>{
+  document.querySelector('#myInput').value !=="" ? goto() : false;
+  function goto() {
+  document.querySelector('.Searchtarget').onclick = ()=>{
+    window.open("html/"+document.querySelector('#myInput').value+"-tag.html","_blank");
+  }
+  }
+}

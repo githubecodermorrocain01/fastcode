@@ -7,15 +7,14 @@ tags.forEach(tag=>{
 })
 })
 
-for (let i = 0; i < 1 ; i++) {
-
-tags.forEach(tag=>{
-console.log( tag.innerHTML.split(' ')[1] +"-tag.html") 
-})
-
-}
 
 
+// for (let i = 0; i < 1 ; i++) {
 
+// tags.forEach(tag=>{
+// console.log( tag.innerHTML.split(' ')[1] +"-tag.html") 
+// })
+
+// }
 
 

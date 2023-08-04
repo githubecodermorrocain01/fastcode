@@ -6,20 +6,47 @@ font-weight: lighter !important;
 }
 body,html{
 height: 100%;
-padding: 2px !important;
 }
 body{
-overflow: hidden;
-padding: 10px;
+overflow: scroll;
 }
+
 #preview{
 font-weight: lighter !important;
-font-size: 10px !important;
-margin: 0px 10px 0px 0px;
+font-size: 5px !important;
 }
 .d-none{
 display: none !important;
 }
 .code{
 font-size: 0.95em;
+left: 0;
+bottom: 0;
+}
+
+/*to top*/  
+#totop{
+position: fixed;
+right: 0;
+bottom: 0;
+z-index: 10;
+cursor: pointer;
+background-color: black;
+color: wheat;
+}
+
+.Modedl{
+filter: invert(2);
+}
+
+.autocomplete-items{
+overflow: scroll;
+}
+.autocomplete-items {
+    max-height: 400px;
+    overflow: scroll;
+}
+
+.bi-flower2{
+font-size: 1.5em !important;    
 }

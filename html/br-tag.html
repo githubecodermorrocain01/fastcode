@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>br tag || FastCode </title>
+    <link rel="stylesheet" href="../dist/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../dist/css/global.css">
+    <link rel=stylesheet href="../dist/doc/docs.css">
+    <link rel="stylesheet" href="../dist/lib/codemirror.css">
+    <link rel="stylesheet" href="../dist/theme/ayu-mirage.css"> 
+    <!-- hint -->
+    <link rel="stylesheet" href="../dist/addon/hint/show-hint.css">
+    <script src="../dist/lib/codemirror.js"></script>
+    <script src="../dist/addon/hint/show-hint.js"></script>
+    <script src="../dist/addon/hint/xml-hint.js"></script>
+    <script src="../dist/addon/hint/html-hint.js"></script>
+    <script src="../dist/mode/xml/xml.js"></script>
+    <script src="../dist/mode/javascript/javascript.js"></script>
+    <script src="../dist/mode/css/css.js"></script>
+    <script src="../dist/mode/htmlmixed/htmlmixed.js">
+    </script>
+    <!-- matchtags  -->
+    <script src="../dist/addon/edit/matchtags.js"></script>
+    <script src="../dist/addon/fold/xml-fold.js"></script>
+    <!-- active line  -->
+    <script src="../dist/addon/selection/active-line.js"></script>
+    <!-- closeBarkets  -->
+    <script src="../dist/addon/edit/closebrackets.js"></script>
+    <script src="../dist/addon/edit/closetag.js"></script>
+    <script src="../dist/addon/fold/xml-fold.js"></script>
+    <script src="../dist/mode/css/css.js"></script>
+    <script src="../dist/mode/javascript/javascript.js"></script>
+    <!-- space  -->
+    <script src="../dist/addon/edit/trailingspace.js"></script>
+    <!-- click  -->
+    <script src="../dist/mode/clike/clike.js"></script>
+    <!--  -->
+    <script src="../dist/mode/markdown/markdown.js"></script>
+    <script src="../dist/mode/xml/xml.js"></script>
+    <!-- hightlighting  -->
+    <script src="../dist/addon/scroll/annotatescrollbar.js"></script>
+    <script src="../dist/addon/search/matchesonscrollbar.js"></script>
+    <script src="../dist/addon/search/searchcursor.js"></script>
+    <script src="../dist/addon/search/match-highlighter.js"></script>
+    <script src="../dist/js/documents.js"></script>
+    <link rel="stylesheet" href="../dist/css/editorStyle.css">
+    <link rel="stylesheet" href="../dist/css/definitions.css">
+    <script src="../dist/js/jquery-3.6.0.min.js"></script>
+    <style>
+    i{
+       font-size: 2em; 
+    }
+    .infos{
+    margin: 2% 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px black inset;
+    }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <article class="code">
+        </article>
+        <iframe id="preview"></iframe>
+    </section>
+    <div class="container"><i class="bi-info-circle-fill bg-danger"></i></div>
+    <p class="infos" style="font-size: 15px;padding: 40px;">
+    The `&lt;br&gt;` tag in HTML is a self-closing tag used to insert a line break within a paragraph or block-level element. <br> It
+    provides a way to start a new line without creating a new paragraph or introducing extra spacing. <br> <span style="color: green;">Here's a more detailed</span> <br>
+    <span style="color: tomato;">definition of the `&lt;br&gt;` tag:</span>
+    <br>
+    1. The `&lt;br&gt;` tag is an empty, self-closing tag in HTML. <br>
+    2. It is used to create a single line break, moving the content after the tag to the next line. <br>
+    3. The `&lt;br&gt;` tag does not require a closing tag. <br>
+    4. It is primarily used to add line breaks within paragraphs or block-level elements. <br>
+    5. When the browser encounters the `&lt;br&gt;` tag, it inserts a line break at that point. <br>
+    6. The `&lt;br&gt;` tag is commonly used in poetry or to structure addresses, song lyrics, or other line-based elements. <br>
+    7. It is useful for separating content into distinct lines without the need for additional elements or complex styling. <br>
+    8. The `&lt;br&gt;` tag does not affect the vertical spacing between elements. <br>
+    9. It is a simple and straightforward way to control line breaks and improve the readability of HTML content. <br>
+    10. The `&lt;br&gt;` tag can be used multiple times in a row to create multiple line breaks. <br>
+    11. It is compatible with all modern browsers and is part of the HTML specification. <br>
+    12. The `&lt;br&gt;` tag is not typically used for major structural formatting; CSS is usually preferred for that purpose. <br>
+    13. It is important to use the `&lt;br&gt;` tag judiciously and only when a line break is semantically necessary.
+    14. Overusing the `&lt;br&gt;` tag can lead to poor code readability and maintenance. <br>
+    15. The `&lt;br&gt;` tag is often used in conjunction with other HTML tags like `&lt;p&gt;`, `
+    &lt;div&gt;`, or `&lt;span&gt;`. <br>
+            16. It is considered a presentational tag, as it affects the visual rendering of the content. <br>
+            17. The `&lt;br&gt;` tag is also useful in cases where line breaks are needed in preformatted text or code snippets. <br>
+            18. It is typically inserted directly within the HTML markup, without the need for additional JavaScript or
+            scripting. <br>
+            19. The `&lt;br&gt;` tag is a widely supported and recognized element across various HTML versions.
+            20. It provides a quick and easy way to insert line breaks within HTML content, enhancing its readability and
+            structure. 
+    </p>
+    <script>
+        editor = CodeMirror(document.querySelector(".code"), {
+            mode: "text/html",
+            mode: "text/javascript",
+            lineNumbers: true,
+            autoCloseTags: true,
+            extraKeys: { "Ctrl-Space": "autocomplete" },
+            value: documents.br,
+            theme: "ayu-mirage",
+            showTrailingSpace: true,
+            matchTags: { bothTags: true },
+            extraKeys: { "Ctrl-J": "toMatchingTag" },
+            mode: "application/xml",
+            styleActiveLine: true,
+            lineWrapping: true,
+            tapWrapping: true,
+            autoCloseBrackets: true,
+            autotrailingspace: true,
+            lineWrapping: true,
+            mode: "markdown",
+            highlightSelectionMatches: { showToken: /\w/, annotateScrollbar: true },
+            // value: document.documentElement.innerHTML
+        });
+
+        window.addEventListener("click", () => {
+        })
+
+        function toggleSelProp() {
+            nonEmpty = !nonEmpty;
+            editor.setOption("styleActiveLine", { nonEmpty: nonEmpty });
+            let label = nonEmpty ? 'Disable nonEmpty option' : 'Enable nonEmpty option';
+            document.getElementById('toggleButton').innerText = label;
+        }
+        let charWidth = editor.defaultCharWidth(), basePadding = 4;
+        editor.on("renderLine", function (cm, line, elt) {
+            let off = CodeMirror.countColumn(line.text, null, cm.getOption("tabSize")) * charWidth;
+            elt.style.textIndent = "-" + off + "px";
+            elt.style.paddingLeft = (basePadding + off) + "px";
+        });
+        editor.refresh();
+        // preview
+        let delay;
+        // Initialize CodeMirror editor with a nice html5 canvas demo.
+        editor.on("change", function () {
+            clearTimeout(delay);
+            delay = setTimeout(updatePreview, 300);
+        });
+
+        function updatePreview() {
+            let previewFrame = document.getElementById('preview');
+            let preview = previewFrame.contentDocument || previewFrame.contentWindow.document;
+            preview.open();
+            preview.write(editor.getValue());
+            preview.close();
+        }
+      
+        setTimeout(updatePreview, 300);
+        document.querySelector("iframe").style.width = window.innerWidth / 2 + "px"
+        document.querySelector("iframe").style.height = window.innerHeight + "px"
+        document.querySelector("article").style.width = window.innerWidth / 2 + "px"
+        document.querySelector("article").style.height = window.innerHeight + "px"
+    </script>
+    <script src="../dist/js/editor.js"></script>
+</body>
+</html>

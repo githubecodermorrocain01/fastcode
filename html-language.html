@@ -14,29 +14,46 @@
     <link rel="stylesheet" href="dist/css/tags-references.css">
     <link rel="stylesheet" href="dist/css/autocomplete.css">
     <script src="dist/js/jquery-3.6.0.min.js"></script>
+    
 </head>
 
 <body>
-<h1>ezdyguzedyufuyzfeudfzeyfduzef</h1>
-    <header class="header container-fluid" id="header">
-        <div class="Name fw-bold d-flex" id="Name">
-            <a href="index.html"><img class="brand" src="dist/brand/fastcode.svg" width="200px"></a>
+<nav class="navbar navbar-expand-lg navbar-light position-fixed container-fluid shadow bg-light" style="top: 0;left: 0;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+        <img class="brand" src="dist/brand/fastcode.svg" width="200px"></a>
+        <button class="navbar-toggler border-0 fs-6" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex justify-content-end align-items-center container me-auto mb-2 mb-lg-0" id="collection">
+            <li class="nav-item">
+                <a class="nav-link" href="FastCodeEditor.html" target="_blank" title="fastCodeEditor : fastcode">Try IT!</a>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link" href="FastPractice.html" target="_blank" title="FastPractice">FastPractice!</a> -->
+            </li>
+            <form autocomplete="off">
+                <div class="autocomplete d-flex" style="width:200px;">
+                    <input id="myInput" type="text"  placeholder="Search 😀">
+                    <button class=" btn btn-primary Searchtarget" type="button" ><i class="bi-search border-0"></i></button>
+                </div>
+            </form>
+               
+            </ul>
         </div>
-    <form autocomplete="off" action="">
-        <div class="autocomplete d-flex" style="width:300px;">
-            <input id="myInput" type="text" name="references" placeholder="try !">
-        <button type="submit"><i class="bi-search border-0  "></i></button>
-        </div>
-    </form>
-</header>
-    <h1><img src="dist/brand/html.svg">HTML</h1>
+    </div>
+</nav>
+    <h1 class="mt-5"><img src="dist/brand/html.svg">HTML</h1>
     <section class="html-content container d-flex justify-content-center align-items-center">
         <div class="html-container">
-            <h2 class="html-tags-types border-1 border-primary border-bottom px-3">Main root</h2>
+            <h2 class="html-tags-types  fs-5 sections text-center container"><i class="bi-flower2"></i> Main root</h2>
             <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center">
                 <li class="html-tag shadow"><a class="tag">&lt; html &gt;</a></li>
             </ul>
-            <h2 class="html-tags-types border-1 border-primary border-bottom px-3">Document metadata</h2>
+            <h2 class="html-tags-types  fs-5 sections text-center container"><i class="bi-flower2"></i> Document metadata</h2>
             <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center">
                 <li class="html-tag shadow"><a class="tag">&lt; base &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; head &gt;</a></li>
@@ -45,11 +62,11 @@
                 <li class="html-tag shadow"><a class="tag">&lt; style &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; title &gt;</a></li>
             </ul>
-            <h2 class="html-tags-types border-1 border-primary border-bottom px-3">Sectioning root</h2>
+            <h2 class="html-tags-types  fs-5 sections text-center container"><i class="bi-flower2"></i> Sectioning root</h2>
             <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center">
                 <li class="html-tag shadow"><a class="tag">&lt; body &gt;</a></li>
             </ul>
-            <h2 class="html-tags-types border-1 border-primary border-bottom px-3">Content sectioning</h2>
+            <h2 class="html-tags-types  fs-5 sections text-center container"><i class="bi-flower2"></i> Content sectioning</h2>
             <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center">
                 <li class="html-tag shadow"><a class="tag">&lt; address &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; article &gt;</a></li>
@@ -65,7 +82,7 @@
                 <li class="html-tag shadow"><a class="tag">&lt; main &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; section &gt;</a></li>
             </ul>
-            <h2 class="html-tags-types border-1 border-primary border-bottom px-3">Text content</h2>
+            <h2 class="html-tags-types  fs-5 sections text-center container"><i class="bi-flower2"></i> Text content</h2>
             <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center">
                 <li class="html-tag shadow"><a class="tag">&lt; blockquote &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; dd &gt;</a></li>
@@ -82,7 +99,7 @@
                 <li class="html-tag shadow"><a class="tag">&lt; pre &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; ul &gt;</a></li>
             </ul>
-            <h2 class="html-tags-types border-1 border-primary border-bottom px-3">Inline text semantics</h2>
+            <h2 class="html-tags-types  fs-5 sections text-center container"><i class="bi-flower2"></i> Inline text semantics</h2>
             <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center">
                 <li class="html-tag shadow"><a class="tag">&lt; a &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; abbr &gt;</a></li>
@@ -99,7 +116,7 @@
                 <li class="html-tag shadow"><a class="tag">&lt; kbd &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; mark &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; q &gt;</a></li>
-                <li class="html-tag shadow"><a class="tag">&lt; rq &gt;</a></li>
+                <!-- <li class="html-tag shadow"><a class="tag">&lt; rq &gt;</a></li> -->
                 <li class="html-tag shadow"><a class="tag">&lt; rt &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; ruby &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; s &gt;</a></li>
@@ -113,7 +130,7 @@
                 <li class="html-tag shadow"><a class="tag">&lt; var &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; wbr &gt;</a></li>
             </ul>
-            <h2 class="html-tags-types border-1 border-primary border-bottom px-3">Image and multimedia</h2>
+            <h2 class="html-tags-types  fs-5 sections text-center container"><i class="bi-flower2"></i> Image and multimedia</h2>
             <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center">
                 <li class="html-tag shadow"><a class="tag">&lt; area &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; audio &gt;</a></li>
@@ -123,7 +140,7 @@
                 <li class="html-tag shadow"><a class="tag">&lt; video &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; video &gt;</a></li>
             </ul>
-            <h2 class="html-tags-types border-1 border-primary border-bottom px-3">Embedded content</h2>
+            <h2 class="html-tags-types  fs-5 sections text-center container"><i class="bi-flower2"></i> Embedded content</h2>
             <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center">
                 <li class="html-tag shadow"><a class="tag">&lt; embed &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; iframe &gt;</a></li>
@@ -133,23 +150,23 @@
                 <li class="html-tag shadow"><a class="tag">&lt; source &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; source &gt;</a></li>
             </ul>
-            <h2 class="html-tags-types border-1 border-primary border-bottom px-3"> SVG and MathML</h2>
+            <h2 class="html-tags-types  fs-5 sections text-center container"><i class="bi-flower2"></i>  SVG and MathML</h2>
             <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center">
                 <li class="html-tag shadow"><a class="tag">&lt; svg &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; math &gt;</a></li>
             </ul>
-            <h2 class="html-tags-types border-1 border-primary border-bottom px-3">Scripting</h2>
+            <h2 class="html-tags-types  fs-5 sections text-center container"><i class="bi-flower2"></i> Scripting</h2>
             <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center">
                 <li class="html-tag shadow"><a class="tag">&lt; canvas &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; noscript &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; script &gt;</a></li>
             </ul>
-            <h2 class="html-tags-types border-1 border-primary border-bottom px-3">Demarcating edits</h2>
+            <h2 class="html-tags-types  fs-5 sections text-center container"><i class="bi-flower2"></i> Demarcating edits</h2>
             <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center">
                 <li class="html-tag shadow"><a class="tag">&lt; del &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; ins &gt;</a></li>
             </ul>
-            <h2 class="html-tags-types border-1 border-primary border-bottom px-3">Table content</h2>
+            <h2 class="html-tags-types  fs-5 sections text-center container"><i class="bi-flower2"></i> Table content</h2>
             <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center">
                 <li class="html-tag shadow"><a class="tag">&lt; caption &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; col &gt;</a></li>
@@ -161,7 +178,7 @@
                 <li class="html-tag shadow"><a class="tag">&lt; thead &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; tr &gt;</a></li>
             </ul>
-            <h2 class="html-tags-types border-1 border-primary border-bottom px-3">Forms</h2>
+            <h2 class="html-tags-types  fs-5 sections text-center container"><i class="bi-flower2"></i> Forms</h2>
             <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center">
                 <li class="html-tag shadow"><a class="tag">&lt; button &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; dialog &gt;</a></li>
@@ -178,11 +195,11 @@
                 <li class="html-tag shadow"><a class="tag">&lt; select &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; textarea &gt;</a></li>
             </ul>
-            <h2 class="html-tags-types border-1 border-primary border-bottom px-3">Interactive elements</h2>
+            <h2 class="html-tags-types  fs-5 sections text-center container"><i class="bi-flower2"></i> Interactive elements</h2>
             <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center">
                 <li class="html-tag shadow"><a class="tag">&lt; details &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; dialog &gt;</a></li>
-                <li class="html-tag shadow"><a class="tag">&lt; sammury &gt;</a></li>
+                <!-- <li class="html-tag shadow"><a class="tag">&lt; sammury &gt;</a></li> -->
                 <li class="html-tag shadow"><a class="tag">&lt; form &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; input &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; label &gt;</a></li>
@@ -195,13 +212,13 @@
                 <li class="html-tag shadow"><a class="tag">&lt; select &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; textarea &gt;</a></li>
             </ul>
-            <h2 class="html-tags-types border-1 border-primary border-bottom px-3">Web Components</h2>
+            <h2 class="html-tags-types  fs-5 sections text-center container"><i class="bi-flower2"></i> Web Components</h2>
             <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center">
                 <li class="html-tag shadow"><a class="tag">&lt; slot &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; template &gt;</a></li>
             </ul>
-            <h2 class="html-tag-types border-1 border-primary border-bottom px-3">Obsolete and deprecated elements</h2>
-            <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center">
+            <h2 class="html-tag-types container text-center fs-5">Obsolete and deprecated elements</h2>
+            <ul class="lists-container d-flex flex-wrap justify-content-center align-items-center" style="margin-bottom: 200px;">
                 <li class="html-tag shadow"><a class="tag">&lt; acronym &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; applet &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; bgsound &gt;</a></li>
@@ -216,7 +233,7 @@
                 <li class="html-tag shadow"><a class="tag">&lt; keygen &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; marquee &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; menuitem &gt;</a></li>
-                <li class="html-tag shadow"><a class="tag">&lt; nobr &gt;</a></li>
+                <!-- <li class="html-tag shadow"><a class="tag">&lt; nobr &gt;</a></li> -->
                 <li class="html-tag shadow"><a class="tag">&lt; noembed &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; noframes &gt;</a></li>
                 <li class="html-tag shadow"><a class="tag">&lt; param &gt;</a></li>
@@ -232,61 +249,49 @@
         </div>
     </section>
     <section class="search-bar d-flex justify-content-center align-items-center" id="searchbar">
-        <div class="search-bar-child d-flex flex-wrap justify-content-center align-items-center" id="searchbar_child">
+        <div class="search-bar-child d-flex flex-wrap " id="searchbar_child">
         <!-- <input type="text" placeholder="search... " class="input shadow border-bottom border-primary" id="search"></input> -->
-            <li class="alphaby">A</li>
-            <li class="alphaby">B</li>
-            <li class="alphaby">C</li>
-            <li class="alphaby">D</li>
-            <li class="alphaby">E</li>
-            <li class="alphaby">F</li>
-            <li class="alphaby">G</li>
-            <li class="alphaby">H</li>
-            <li class="alphaby">I</li>
-            <li class="alphaby">J</li>
-            <li class="alphaby">K</li>
-            <li class="alphaby">L</li>
-            <li class="alphaby">M</li>
-            <li class="alphaby">N</li>
-            <li class="alphaby">O</li>
-            <li class="alphaby">P</li>
-            <li class="alphaby">Q</li>
-            <li class="alphaby">R</li>
-            <li class="alphaby">S</li>
-            <li class="alphaby">T</li>
-            <li class="alphaby">U</li>
-            <li class="alphaby">V</li>
-            <li class="alphaby">W</li>
-            <li class="alphaby">X</li>
-            <li class="alphaby">Y</li>
-            <li class="alphaby">Z</li>
-        </div>
     </section>
+    <i id="totop" class="bi-arrow-up"></i>
+    <script src="dist/js/bootstrap.bundle.min.js "></script>
     <script>
-        let alphaby = document.querySelectorAll(".alphaby")
 
-        alphaby.forEach((alpha) => {
-            alpha.addEventListener("click", GoTo)
-            alpha.addEventListener("mousemove", GoTo)
+    /*alphaby2*/
+    document.querySelectorAll(".sections").forEach(alpha2 => {
+        alpha2.insertAdjacentHTML('afterbegin', '<span class="alphabie2" style="color:transparent"></span>')
+    document.querySelector('#searchbar_child').innerHTML += "<div class='alphaby2'>"+alpha2.textContent+"</div>"
+    })
 
-            function GoTo() {
-                let alphabie = document.querySelectorAll(".alphabie")
-                alphabie.forEach((alphab) => {
-                    if (alpha.textContent == alphab.textContent) {
-                        window.scrollTo({
-                            top: alphab.offsetTop,
-                            behavior: 'smooth'
-                        });
-                    } else {
-                        return false;
-                    }
-                })
-            }
-        })
+    let alphaby2 = document.querySelectorAll(".alphaby2")
 
-        console.log(document.querySelector('.tag').innerHTML)
+    alphaby2.forEach((alpha) => {
+        alpha.addEventListener("click", GoTo)
+        // alpha.addEventListener("mousemove", GoTo)
+
+        function GoTo() {
+            let sections = document.querySelectorAll(".sections")
+            sections.forEach((sec) => {
+                if (alpha.textContent == sec.textContent) {
+                    window.scrollTo({
+                        top: sec.offsetTop,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    return false;
+                }
+            })
+        }
+    })
+
+    /*to top*/
+    const totop = document.querySelector('#totop');
+    totop.onclick = ()=>{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
             </script>
             <script src="dist/js/newtab.js"></script>
             <script src="dist/js/autocomplete.js"></script>
 </body>
 </html>
+

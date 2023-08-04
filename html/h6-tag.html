@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> h1,h2,h3,h4,h5,h6 tags || FastCode </title>
-    <link rel="stylesheet" href="/dist/bootstrap-icons/bootstrap-icons.css">
-    <link rel="stylesheet" href="/dist/css/global.css">
+    <link rel="stylesheet" href="../dist/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../dist/css/global.css">
     <link rel=stylesheet href="../dist/doc/docs.css">
     <link rel="stylesheet" href="../dist/lib/codemirror.css">
-    <link rel="stylesheet" href="../dist/theme/cobalt.css">
+    <link rel="stylesheet" href="../dist/theme/ayu-mirage.css">
     <link rel="stylesheet" href="../dist/addon/hint/show-hint.css">
     <script src="../dist/lib/codemirror.js"></script>
     <script src="../dist/addon/hint/show-hint.js"></script>
@@ -45,11 +45,13 @@
     <script src="../dist/addon/search/searchcursor.js"></script>
     <script src="../dist/addon/search/match-highlighter.js"></script>
     <script src="../dist/js/documents.js"></script>
-    <link rel="stylesheet" href="/dist/css/editorStyle.css">
-    <link rel="stylesheet" href="/dist/css/definitions.css">
-    <script src="/dist/js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../dist/css/editorStyle.css">
+    <link rel="stylesheet" href="../dist/css/definitions.css">
+    <script src="../dist/js/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
+    <div id="message"></div>
     <div class="container">
         <article class="code">
         </article>
@@ -63,7 +65,7 @@
             autoCloseTags: true,
             extraKeys: { "Ctrl-Space": "autocomplete" },
             value: documents.h1_h2_h3_h4_h5_h6,
-            theme: "cobalt",
+            theme: "ayu-mirage",
             showTrailingSpace: true,
             matchTags: { bothTags: true },
             extraKeys: { "Ctrl-J": "toMatchingTag" },
@@ -107,13 +109,13 @@
             preview.close();
         }
         setTimeout(updatePreview, 300);
-          
-</script>
-<script>
-   $(document.body).click(function() {
-     $("span:contains('<h1>'),span:contains('<h2>'),span:contains('<h3>'),span:contains('<h4>'),span:contains('<h5>'),span:contains('<h6>')").toggleClass("bi-arrow-right")
-  })    
-</script>
+
+    </script>
+    <script>
+        $(document.body).click(function () {
+            $("span:contains('<h1>'),span:contains('<h2>'),span:contains('<h3>'),span:contains('<h4>'),span:contains('<h5>'),span:contains('<h6>')").toggleClass("bi-arrow-right")
+        })    
+    </script>
     <script src="../dist/js/editor.js"></script>
 </body>
 

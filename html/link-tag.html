@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>link tag || FastCode </title>
-    <link rel="stylesheet" href="/dist/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../dist/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" href="../dist/css/global.css">
     <link rel=stylesheet href="../dist/doc/docs.css">
     <link rel="stylesheet" href="../dist/lib/codemirror.css">
-    <link rel="stylesheet" href="../dist/theme/cobalt.css">
+    <link rel="stylesheet" href="../dist/theme/ayu-mirage.css">
+    <!-- hint -->
     <link rel="stylesheet" href="../dist/addon/hint/show-hint.css">
     <script src="../dist/lib/codemirror.js"></script>
     <script src="../dist/addon/hint/show-hint.js"></script>
@@ -44,11 +45,11 @@
     <script src="../dist/addon/search/matchesonscrollbar.js"></script>
     <script src="../dist/addon/search/searchcursor.js"></script>
     <script src="../dist/addon/search/match-highlighter.js"></script>
-    <link rel="stylesheet" href="/dist/css/editorStyle.css">
     <script src="../dist/js/documents.js"></script>
-    <link rel="stylesheet" href="/dist/css/editorStyle.css">
-    <link rel="stylesheet" href="/dist/css/definitions.css">
-    <script src="/dist/js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../dist/css/editorStyle.css">
+    <link rel="stylesheet" href="../dist/css/definitions.css">
+    <script src="../dist/js/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
     <section class="container">
@@ -56,20 +57,21 @@
         </article>
         <iframe id="preview"></iframe>
     </section>
+    <button class="seeexternalfile">yourFileSourceHere</button>
     <script>
         editor = CodeMirror(document.querySelector(".code"), {
             mode: "text/html",
             mode: "text/javascript",
-            lineNumbers: true,
+            lineNumbers: true,  
             autoCloseTags: true,
             extraKeys: { "Ctrl-Space": "autocomplete" },
             value: documents.link,
-            theme: "cobalt",
+            theme: "ayu-mirage",
             showTrailingSpace: true,
             matchTags: { bothTags: true },
             extraKeys: { "Ctrl-J": "toMatchingTag" },
             mode: "application/xml",
-            styleActiveLine: true,
+            styleActiveLine: true,              
             lineWrapping: true,
             tapWrapping: true,
             autoCloseBrackets: true,
@@ -116,10 +118,27 @@
     </script>
     <script>
       $(document.body).click(function () {
-            $("span:contains('<a')").toggleClass("bi-arrow-right");
+            $("span:contains('<link'),span:contains('</link')").toggleClass("bi-arrow-right");
         })
     </script>
-    <script src="/dist/js/editor.js"></script>
+    <script>
+    const seeexternalfile = document.querySelector('.seeexternalfile');
+        seeexternalfile.style.position = 'absolute';
+        seeexternalfile.style.right = '0'
+        seeexternalfile.style.bottom = '0'
+        seeexternalfile.style.cursor = "pointer"
+        seeexternalfile.style.border = "none"
+       $(seeexternalfile).click(function () {
+       $('body > section > article > div > div.CodeMirror - scroll > div.CodeMirror - sizer > div > div > div > div.CodeMirror - code > div.CodeMirror - activeline > pre > span > span.cm - tag.cm - overlay.cm - matchhighlight.CodeMirror - matchingtag').css('background-color','red')
+            const message = prompt('you want see yourFileSourceHere.css?');
+            if (message.toLocaleLowerCase() === "yes") {
+                window.open('../dist/css/yourfileSourceHere.css', '_black')
+            } else {
+                return false
+            }
+        })
+    </script>
+    <script src="../dist/js/editor.js"></script>
 </body>
 
 </html>

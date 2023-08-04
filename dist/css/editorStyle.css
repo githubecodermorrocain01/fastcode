@@ -1,9 +1,9 @@
- * {
+        * {
             margin: 0;
             padding: 0;
         }
         body{
-        background-image: url('/dist/brand/fastcode.svg');
+        /* background-image: url('/dist/brand/fastcode.svg'); */
         background-size: cover;
         }
 
@@ -13,6 +13,24 @@
             align-items: center;
             justify-content: center;
             opacity: 97%;
+        }
+         @media (max-width: 768px) {
+        .container{
+        display: flex;
+        flex-direction: column;
+                }
+        iframe,
+        article,
+        .CodeMirror {
+        border: 0;
+        min-width: 100%;
+            }
+        body{
+        overflow: scroll !important;
+        }
+        }
+        .CodeMirror-scrollbar {
+        overflow: hidden !important;
         }
 
         article {
@@ -25,20 +43,20 @@
         article,
         .CodeMirror {
             border: 0;
-            min-height: 100%;   
+            min-height: 100%; 
         }
-
+        
         iframe {
             background-color: white;
         }
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
 
-        ::-webkit-scrollbar-thumb {
-            background-color: darkgoldenrod;
+        article::-webkit-scrollbar{
+        width: 10px;
         }
-
+        article::-webkit-scrollbar-thumb{
+        background-color: wheat !important;
+        cursor: pointer;
+        }
         /* .cm-trailingspace {
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAYAAAB/qH1jAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QUXCToH00Y1UgAAACFJREFUCNdjPMDBUc/AwNDAAAFMTAwMDA0OP34wQgX/AQBYgwYEx4f9lQAAAABJRU5ErkJggg==);
       background-position: bottom left;
@@ -117,4 +135,7 @@
     animation: none !important;
     right: 0;
     cursor: pointer;
-}
+    }
+    .CodeMirror-scroll{
+    overflow: hidden !important;
+    }
